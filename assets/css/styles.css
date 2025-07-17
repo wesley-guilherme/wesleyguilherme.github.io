@@ -286,6 +286,9 @@ main {
 
 .card__cover {
     width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card__body {
@@ -383,6 +386,21 @@ footer p {
         margin: 0;
     }
 
+}
+
+@media (min-width: 992px) {
+    .projects__card {
+        flex-direction: row;
+    }
+
+    .projects__card .card--reverse {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .card__cover {
+        width: 55%;
+    }
 }
 
 @media(min-width: 1200px) {
