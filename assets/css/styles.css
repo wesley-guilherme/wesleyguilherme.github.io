@@ -282,6 +282,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem;
 }
 
 .card__cover {
@@ -305,10 +306,12 @@ main {
 
 .card__description {
     font-size: 1rem;
+    color: var(--title-color);
 }
 
 .card__list {
     margin-left: 1rem;
+    color: var(--primary-color);
 }
 
 .card__item {
@@ -393,7 +396,7 @@ footer p {
         flex-direction: row;
     }
 
-    .projects__card .card--reverse {
+    .projects__card.card--reverse {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
