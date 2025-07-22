@@ -146,6 +146,12 @@ p {
     width: 100%;
 }
 
+.menu__link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 .menu--mobile {
     width: 100vw;
     position: fixed;
@@ -283,8 +289,6 @@ main {
     height: 4.8rem;
     aspect-ratio: 1/1;
     border: 1px solid var(--secondary-border-color);
-    align-items: center;
-    gap: 2rem;
     border-radius: 50rem;
 }
 
@@ -385,8 +389,8 @@ main {
 
 
 .about__photo {
-    width: 22rem;
-    height: 22rem;
+    width: 18.75rem;
+    height: 22.5rem;
     object-fit: cover;
     object-position: center;
     pointer-events: none;
@@ -425,6 +429,34 @@ main {
     flex-direction: column;
     gap: .5rem
 }
+
+#accordion {
+    border-radius: .5rem;
+    border: 1px solid var(--primary-border-color);
+}
+
+.accordion__header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondary-bg-color);
+    border: 1px solid var(--primary-border-color);
+}
+
+.accordion__header span {
+    color: var(--title-color);
+}
+
+.accordion__body {
+    display: flex;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .625rem;
+}
+
 /* https://github.com/elidianaandrade/dio-lab-portfolio/blob/main/assets/css/styles.css*/
 
 footer {
@@ -464,11 +496,18 @@ footer p {
 
     h2 {
         font-size: 3rem;
-        letter-spacing: 0.4rem;
     }
 
     main, .projects, .about {
         padding: 8rem 6rem 4rem 6rem;        
+    }
+
+    .contact {
+        padding: 6rem ;
+    }
+
+    .contact p {
+        width: 80%;
     }
 
     .main__content1 {
@@ -528,6 +567,10 @@ footer p {
     h2 {
         font-size: 4rem;
     }
+
+    h3 {
+        font-size: 2.5rem;
+    }
     
     .main {
         padding: 12rem 6rem 2rem;
@@ -561,24 +604,9 @@ footer p {
     height: 3rem;
 }
 
-.projects__card {
-    flex-direction: row;
-}
 
 p, span, li {
     font-size: 1.15rem; 
-}
-
-.card__cover {
-    width: 50%;
-}
-
-.card__title {
-    font-size: 3.25rem;
-}
-
-.card__description, .card__item {
-    font-size: 1.25rem;
 }
 
 .card__buttons .btn,
@@ -598,7 +626,7 @@ p, span, li {
     }
 
     h3 {
-        font-size: ;
+        font-size: 3.25rem;
     }
 
     .header {
