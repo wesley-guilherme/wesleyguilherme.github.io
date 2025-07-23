@@ -441,21 +441,47 @@ main {
     padding: 0.75rem 1rem;
     justify-content: space-between;
     align-items: center;
-    background: var(--secondary-bg-color);
     border: 1px solid var(--primary-border-color);
+    background: transparent;
 }
 
 .accordion__header span {
     color: var(--title-color);
 }
 
+.accordion__header .start {
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+
+.accordion__header.end,
+.accordion__item.active .accordion__body.end {
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+
+.accordion__item.active .accordion__header.end {
+    border-radius: 0;
+}
+
 .accordion__body {
-    display: flex;
+    display: none;
     padding: 1.25rem;
     flex-direction: column;
     align-items: flex-start;
     gap: .625rem;
 }
+
+.accordion__item.active .accordion__header {
+    background: var(--secondary-bg-color);
+}
+
+.accordion__item.active .accordion__body {
+    display: flex;
+}
+
+.accordion__item.active .bi-caret-down-fill {
+    transform: rotate(180deg);
+}
+
 
 /* https://github.com/elidianaandrade/dio-lab-portfolio/blob/main/assets/css/styles.css*/
 
@@ -542,16 +568,36 @@ footer p {
     }
 
     .about {
+        display: flex;
+        flex-direction: column;
         gap: 5rem;
     }
 
-    .about__content1, .about__content2 {
-        display: grid;
-        grid-template-columns: 34% 60%;
-        justify-content: flex-start;
-        align-items: flex-start;
+
+    .about__content1 {
+        display: flex;
+        flex-direction: row;
         gap: 4rem;
+        align-items: flex-start;
     }
+    
+    .about__content1 .about__photo, 
+    .about__content1 .about__description {
+        flex: 1;
+    }
+
+    .about__content2 {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+
+    .about__content2 .col1,
+    .about__content2 .col2 {
+        flex: 1;
+    }
+
 
     .about__description h2 {
         text-align: left;
@@ -564,6 +610,7 @@ footer p {
 
 
 @media(min-width: 1200px) {
+    
     h2 {
         font-size: 4rem;
     }
@@ -598,19 +645,19 @@ footer p {
     .technologies__item {
     width: 6rem;
     height: 6rem;
-}
+    }
 
-.technologies__logo {
+    .technologies__logo {
     height: 3rem;
-}
+    }
 
 
-p, span, li {
+    p, span, li {
     font-size: 1.15rem; 
-}
+    }
 
-.card__buttons .btn,
-.description__buttons .btn {
+    .card__buttons .btn,
+    .description__buttons .btn {
     width: auto;
     }
 }
