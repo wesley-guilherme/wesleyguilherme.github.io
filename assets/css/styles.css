@@ -575,29 +575,43 @@ footer p {
 
 
     .about__content1 {
-        display: flex;
         flex-direction: row;
-        gap: 4rem;
         align-items: flex-start;
+        gap: 4rem;
+    }
+
+    .about__photo {
+        flex: 1;
+        max-width: 300px;
+    }
+
+    .about__info {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
     
-    .about__content1 .about__photo, 
-    .about__content1 .about__description {
-        flex: 1;
+    .about__description {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     .about__content2 {
         display: flex;
         flex-direction: row;
-        gap: 4rem;
+        gap: 2rem;
+        justify-content: center;
         align-items: flex-start;
+        max-width: 100%;
     }
 
-    .about__content2 .col1,
-    .about__content2 .col2 {
+    .col1,
+    .col2 {
         flex: 1;
+        max-width: 400px;
     }
-
 
     .about__description h2 {
         text-align: left;
