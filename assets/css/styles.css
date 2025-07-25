@@ -482,6 +482,27 @@ main {
     transform: rotate(180deg);
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--primary-border-color);
+    border-bottom: 1px solid var(--primary-border-color);
+}
+
+.contact p {
+    text-align: center;
+}
+
+.contact .btn {
+    width: auto;
+}
+
+.contact .email {
+    text-transform: lowercase;
+}
 
 /* https://github.com/elidianaandrade/dio-lab-portfolio/blob/main/assets/css/styles.css*/
 
