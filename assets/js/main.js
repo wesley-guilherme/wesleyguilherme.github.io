@@ -5,4 +5,5 @@ function updatePortInfo(portData) {
 
 (async() => {
     const portData = await fetchPortData()
+    updatePortInfo(portData)
 })
