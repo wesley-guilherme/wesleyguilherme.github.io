@@ -1,11 +1,11 @@
 function updatePortInfo(portData) {
-    const title = document.getElementById('port-title')
-    title.innerText = portData.title
+    const title = document.getElementById('port-title');
+    title.innerText = portData.title;
 }
 
 function updatePortName(portData) {
-    const name = document.getElementById('port-name')
-    name.innerText = portData.name
+    const name = document.getElementById('port-name');
+    name.innerText = portData.name;
 }
 
 (async() => {
