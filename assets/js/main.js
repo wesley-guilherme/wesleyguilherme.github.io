@@ -1,3 +1,8 @@
 function updatePortInfo(portData) {
-    const title = document.getElementById('')
+    const title = document.getElementById('port.title')
+    title.innerText = portData.title
 }
+
+(async() => {
+    const portData = await fetchPortData()
+})
