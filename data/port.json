@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "title": "Portfólio Wesley Guilherm",
     "name": "Wesley Santos Guilherme, Salvador-BA, Desenvolvedor Front-End",
+=======
+    "title": "Portfolio ---> (Wesley Guilherme)",
+    "name": "Wesley S. Guilherme, Salvador-BA, Desenvolvedor Front-End",
+>>>>>>> 1ab8fe9038caf032735d9633822c27703519fcde
     "about": "Apaixonado por tecnologia, formado em Front-End...",
     "projects": [
       {
