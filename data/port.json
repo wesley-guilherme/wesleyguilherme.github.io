@@ -1,20 +1,5 @@
 {
     "port-title": "Portfolio ---> (Wesley Guilherme)",
     "port-name": "Wesley S. Guilherme, Salvador-BA, Desenvolvedor Front-End",
-    "about": "Apaixonado por tecnologia, formado em Front-End...",
-    "projects": [
-      {
-        "name": "Josi's Box",
-        "description": "Ecommerce de livros",
-        "url": "https://josibox.com.br",
-        "image": "./assets/images/projects/josisbox.png"
-      },
-      {
-        "name": "Site Institucional GETEC",
-        "description": "Tecnologia para órgãos do estado",
-        "url": "#",
-        "image": "./assets/images/projects/getec.png"
-      }
-    ]
   }
   
